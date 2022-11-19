@@ -1,0 +1,24 @@
+clear 
+t=-1:0.01:6;
+x=exp(-t).*cos(3*t).*(u(t)-u(t-2));
+h=t.^(-1).*(u(t-1)-u(t-3));
+h(101)=0;				
+y=conv(x,h)*0.01;
+y1=y(100:800);			
+subplot(3,1,1);
+plot(t,x,'-r');
+title('x(t)=e^{-t}cos(3t)(u(t)-u(t-2))');
+xlabel('t');
+ylabel('x(t)');
+hold on;
+subplot(3,1,2);
+plot(t,h,'--b');
+axis([-1,6,-0.5,1]);
+xlabel('t');
+ylabel('h(t)');
+title('h(t)=t^{-1}(u(t-1)-u(t-3))');
+hold on;
+subplot(3,1,3);
+plot(t,y1);xlabel('t');
+ylabel('x(t)*h(t)');
+title('y(t)=x(t)*h(t)');

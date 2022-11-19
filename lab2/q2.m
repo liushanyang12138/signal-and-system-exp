@@ -1,0 +1,23 @@
+clear
+t=-10:10;
+h=2.^(-t).*(u(t)-u(t-6));
+x=exp(-0.05*t).*(u(t+8)-u(t-4));
+y=conv(x,h);
+y1=y(11:31);
+subplot(3,1,1);
+stem(t,x,'r');
+xlabel('n');
+ylabel('x[n]');
+title('x[n]=e^{-0.05n}(u[n+8]-u[n-4])');
+hold on;
+subplot(3,1,2);
+stem(t,h,'b');
+xlabel('n');
+ylabel('h[n]');
+title('h[n]=2^{-n}(u[n]-u[n-6])');
+hold on;
+subplot(3,1,3);
+stem(t,y1);
+xlabel('n');
+ylabel('x[n]*h[n]');
+title('y[n]=x[n]*h[n]');

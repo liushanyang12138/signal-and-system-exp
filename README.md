@@ -1,13 +1,15 @@
 # matlab_exp  
 ## this is the expriment of matlab of signal and system  
-*structure of this lab*
+**structure of this lab**
 >matlab_exp  
 >>lab1  
 >>lab2  
 >>lab3  
 >>lab4
 >
-
+**outline of this lab**  
+lab1|lab2|lab3|lab4  
+simple use| conv | FS| FT  
 ![matlab-image](/image/matlab.webp)  
 after all exps,we will have a preliminary understanding of [matlab](https://ww2.mathworks.cn/help/matlab/help-and-support.html) drawing signals  
 ## In lab1:  

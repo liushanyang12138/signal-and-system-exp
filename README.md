@@ -11,4 +11,5 @@ after all exps,we will have a preliminary understanding of [matlab](https://ww2.
   Learn to solve Fourier series and verify properties  
 ## In lab4:  
   Learn to solve the Fourier transform and verify properties  
-
+* contributor:liushanyang12138
+* university:buaa
